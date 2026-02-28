@@ -1,38 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login & Signup</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Responsive Login and Signup Form" />
+    <title>Login And Signup Form | CodeByGaurav</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 </head>
+
 <body>
 
-<div class="container">
+<main class="container" id="container">
 
-    <div class="form-box">
+    <!-- Sign Up Section -->
+    <section class="form-container sign-up-container">
+        <form action="#" method="post" autocomplete="on">
+            <h1>Create Account</h1>
 
-        <h2>Login</h2>
-
-        <form>
-            <div class="input-group">
-                <input type="email" placeholder="Email" required>
+            <div class="social-container">
+                <a href="#" class="social" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social" aria-label="Google">
+                    <i class="fa-brands fa-google-plus"></i>
+                </a>
+                <a href="#" class="social" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
 
-            <div class="input-group">
-                <input type="password" placeholder="Password" required>
-            </div>
+            <p>Or use your email for registration</p>
 
-            <button type="submit">Login</button>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
 
-            <p class="switch">
-                Don't have an account? <a href="#">Sign Up</a>
-            </p>
+            <button type="submit">Sign Up</button>
         </form>
+    </section>
 
-    </div>
+    <!-- Sign In Section -->
+    <section class="form-container sign-in-container">
+        <form action="#" method="post" autocomplete="on">
+            <h1>Sign In</h1>
 
-</div>
+            <div class="social-container">
+                <a href="#" class="social" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social" aria-label="Google">
+                    <i class="fa-brands fa-google-plus"></i>
+                </a>
+                <a href="#" class="social" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+
+            <p>Or use your account</p>
+
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+
+            <a href="#">Forgot your password?</a>
+
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+
+    <!-- Overlay Section -->
+    <section class="overlay-container">
+        <div class="overlay">
+
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>
+                    To keep connected with us please login with your personal info.
+                </p>
+                <button class="ghost" id="signIn" type="button">Sign In</button>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>
+                    Enter your personal details and start your journey with us.
+                </p>
+                <button class="ghost" id="signUp" type="button">Sign Up</button>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
 </html>
