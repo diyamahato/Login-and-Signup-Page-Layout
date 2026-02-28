@@ -1,3 +1,4 @@
+
 const signInButton = document.getElementById("signIn");
 const signUpButton = document.getElementById("signUp");
 const container = document.getElementById("container");
